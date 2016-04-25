@@ -10,6 +10,9 @@
 		BA5E29E81CCD328D001AE4FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E29E71CCD328D001AE4FA /* AppDelegate.swift */; };
 		BA5E29EA1CCD328D001AE4FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA5E29E91CCD328D001AE4FA /* Assets.xcassets */; };
 		BA5E29ED1CCD328D001AE4FA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA5E29EB1CCD328D001AE4FA /* MainMenu.xib */; };
+		BA5E29F61CCD819B001AE4FA /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E29F41CCD819B001AE4FA /* MainWindowController.swift */; };
+		BA5E29F71CCD819B001AE4FA /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA5E29F51CCD819B001AE4FA /* MainWindowController.xib */; };
+		BA8685DF1CCDC19100E8FE8B /* GeneratePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8685DE1CCDC19100E8FE8B /* GeneratePassword.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +21,10 @@
 		BA5E29E91CCD328D001AE4FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA5E29EC1CCD328D001AE4FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		BA5E29EE1CCD328D001AE4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA5E29F41CCD819B001AE4FA /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		BA5E29F51CCD819B001AE4FA /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		BA8685DD1CCDBFFD00E8FE8B /* RandomPassword.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RandomPassword.entitlements; sourceTree = "<group>"; };
+		BA8685DE1CCDC19100E8FE8B /* GeneratePassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePassword.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +57,11 @@
 		BA5E29E61CCD328D001AE4FA /* RandomPassword */ = {
 			isa = PBXGroup;
 			children = (
+				BA8685DD1CCDBFFD00E8FE8B /* RandomPassword.entitlements */,
 				BA5E29E71CCD328D001AE4FA /* AppDelegate.swift */,
+				BA5E29F41CCD819B001AE4FA /* MainWindowController.swift */,
+				BA5E29F51CCD819B001AE4FA /* MainWindowController.xib */,
+				BA8685DE1CCDC19100E8FE8B /* GeneratePassword.swift */,
 				BA5E29E91CCD328D001AE4FA /* Assets.xcassets */,
 				BA5E29EB1CCD328D001AE4FA /* MainMenu.xib */,
 				BA5E29EE1CCD328D001AE4FA /* Info.plist */,
@@ -90,6 +101,14 @@
 				TargetAttributes = {
 					BA5E29E31CCD328D001AE4FA = {
 						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -117,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA5E29EA1CCD328D001AE4FA /* Assets.xcassets in Resources */,
+				BA5E29F71CCD819B001AE4FA /* MainWindowController.xib in Resources */,
 				BA5E29ED1CCD328D001AE4FA /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,6 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5E29F61CCD819B001AE4FA /* MainWindowController.swift in Sources */,
+				BA8685DF1CCDC19100E8FE8B /* GeneratePassword.swift in Sources */,
 				BA5E29E81CCD328D001AE4FA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +293,7 @@
 				BA5E29F31CCD328D001AE4FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
